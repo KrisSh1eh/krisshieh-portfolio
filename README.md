@@ -30,7 +30,7 @@ http://localhost:8000
 
 Search the project for these items:
 
-1. `35352611@student.murdoch.edu.au`
+1. `kris.xie@murdoch.edu.au`
 2. Project descriptions and tags
 3. Education dates and descriptions
 4. `Australia` in the hero metadata

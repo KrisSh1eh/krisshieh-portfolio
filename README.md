@@ -100,3 +100,12 @@ Recommended image dimensions: at least 1600 × 1000 pixels.
 - Converted PNG screenshots to compressed WebP files for faster page loading.
 - Updated the gallery to use one featured image and three supporting stage images.
 - Added descriptive alternative text and lazy loading for accessibility and performance.
+
+
+## Version 4 updates
+
+- Rebuilt the ADGF section as a full-width published-research card.
+- Added the Journal of Metaverse publication link.
+- Added the paper title, publication type, year, and DOI.
+- Added a compact visual summary of the systematic review and five-step design process.
+- Forced the Prototype Gallery and ADGF card to occupy full grid rows to prevent column collision.

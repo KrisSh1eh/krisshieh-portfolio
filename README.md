@@ -30,7 +30,7 @@ http://localhost:8000
 
 Search the project for these items:
 
-1. `kris.xie@murdoch.edu.au`
+1. Confirm `kris.xie@murdoch.edu.au`
 2. Project descriptions and tags
 3. Education dates and descriptions
 4. `Australia` in the hero metadata
@@ -69,3 +69,34 @@ Search the project for these items:
 - Add publication entries and DOI links.
 - Add an English/Chinese language switch.
 - Add privacy-friendly analytics.
+
+
+## Version 2 updates
+
+- Added a custom sci-fi cursor with a glowing point, delayed tracking ring, hover response, and click particles.
+- Updated the professional identity to PhD researcher at Murdoch University.
+- Updated the contact email to `kris.xie@murdoch.edu.au`.
+- Added a responsive prototype image gallery.
+- Added three replace-ready SVG placeholders in `assets/`.
+
+## Replacing the prototype images
+
+For the cleanest update, export three screenshots as JPG or WebP and use these exact filenames:
+
+```text
+assets/prototype-hat-selection.jpg
+assets/prototype-emotion-bubble.jpg
+assets/prototype-chess-puzzle.jpg
+```
+
+Then update the corresponding `src` values in `index.html` from `.svg` to `.jpg`.
+Recommended image dimensions: at least 1600 × 1000 pixels.
+
+
+## Version 3 updates
+
+- Replaced the gallery placeholders with four original prototype screenshots.
+- Added Shared Chess Puzzle, Hat Selection, Emotion Bubble, and Table Cube images.
+- Converted PNG screenshots to compressed WebP files for faster page loading.
+- Updated the gallery to use one featured image and three supporting stage images.
+- Added descriptive alternative text and lazy loading for accessibility and performance.

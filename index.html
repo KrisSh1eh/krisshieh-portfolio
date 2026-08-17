@@ -3,528 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kris Shieh — interaction designer and mixed reality researcher exploring social MR, gamification, and human-computer interaction." />
-  <meta name="keywords" content="Kris Shieh, Baitong Xie, portfolio, mixed reality, metaverse, interaction design, UX, HCI, gamification" />
-  <meta name="author" content="Kris Shieh" />
-  <meta name="theme-color" content="#07111f" />
-
-  <meta property="og:title" content="Kris Shieh — Interaction Designer & MR Researcher" />
-  <meta property="og:description" content="Portfolio and research in mixed reality, gamification, interaction design, and social computing." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://krisshieh.com" />
-
-  <title>Kris Shieh — Interaction Designer & MR Researcher</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta name="description" content="Participate in a Murdoch University mixed reality research study using Meta Quest 3." />
+  <title>Participate in a Mixed Reality Study | De-buff Party</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="cursor-glow" aria-hidden="true"></div>
-
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Kris Shieh home">
-      <span class="brand-mark">KS</span>
-      <span class="brand-text">KRIS SHIEH</span>
-    </a>
-
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
-      <span></span><span></span>
-      <span class="sr-only">Toggle menu</span>
-    </button>
-
-    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#research">Research</a>
-      <a href="#background">Background</a>
-      <a class="nav-cta" href="#contact">Contact</a>
+  <header class="nav">
+    <a class="brand" href="#top">DE-BUFF PARTY</a>
+    <nav>
+      <a href="#experience">Experience</a>
+      <a href="#details">Details</a>
+      <a href="#eligibility">Eligibility</a>
+      <a class="nav-cta" href="#register">Join the study</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero section-shell">
-      <div class="hero-orbit" aria-hidden="true">
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="orbit orbit-three"></div>
-        <div class="core"></div>
-      </div>
-
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="signal-dot"></span> INTERACTION DESIGN × MIXED REALITY</p>
-        <h1>
-          Designing meaningful
-          <span class="gradient-text">human experiences</span>
-          across physical and virtual worlds.
-        </h1>
-        <p class="hero-description">
-          I am Kris Shieh, a PhD researcher at Murdoch University and an interaction designer working across
-          social MR, gamification, spatial interaction, and human-computer interaction.
-        </p>
-
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MURDOCH UNIVERSITY · MIXED REALITY RESEARCH</p>
+        <h1>Play together.<br><span>Interact differently.</span></h1>
+        <p class="lead">Take part in a co-located multiplayer mixed reality study using Meta Quest 3 and help us explore how gameful design can support social interaction.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#work">
-            Explore selected work
-            <span aria-hidden="true">↘</span>
-          </a>
-          <a class="button button-secondary" href="#contact">Start a conversation</a>
+          <a class="button primary" href="#register">Register your interest</a>
+          <a class="button secondary" href="#experience">See the experience</a>
         </div>
-
-        <div class="hero-meta" aria-label="Professional focus">
-          <div>
-            <span>Focus</span>
-            <strong>Social Mixed Reality</strong>
-          </div>
-          <div>
-            <span>Based in</span>
-            <strong>Murdoch University</strong>
-          </div>
-          <div>
-            <span>Domains</span>
-            <strong>HCI · UX · Gameful Design</strong>
-          </div>
-        </div>
+        <p class="micro">Research participation is voluntary. Eligibility and study information are provided below.</p>
       </div>
 
-      <div class="hero-interface reveal" aria-label="Decorative mixed reality interface">
-        <div class="interface-top">
-          <span>SPATIAL SYSTEM / 01</span>
-          <span class="status">LIVE</span>
-        </div>
-        <div class="interface-viewport">
-          <div class="grid-plane"></div>
-          <div class="holo-card card-a">
-            <span>01</span>
-            <strong>IDENTITY</strong>
-          </div>
-          <div class="holo-card card-b">
-            <span>02</span>
-            <strong>CO-PRESENCE</strong>
-          </div>
-          <div class="holo-card card-c">
-            <span>03</span>
-            <strong>PLAY</strong>
-          </div>
-          <div class="scan-line"></div>
-        </div>
-        <div class="interface-bottom">
-          <span>Shared space synchronised</span>
-          <span>04 participants</span>
+      <div class="hero-visual" aria-label="De-buff Party visual">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="orb orb-c"></div>
+        <div class="device-card">
+          <span class="card-label">CO-LOCATED MR / 4 PLAYERS</span>
+          <div class="visor">MR</div>
+          <p>Shared space · social interaction · collaborative play</p>
         </div>
       </div>
     </section>
 
-    <section class="ticker" aria-label="Areas of practice">
-      <div class="ticker-track">
-        <span>MIXED REALITY</span><i>✦</i>
-        <span>INTERACTION DESIGN</span><i>✦</i>
-        <span>GAMIFICATION</span><i>✦</i>
-        <span>USER EXPERIENCE</span><i>✦</i>
-        <span>HUMAN-COMPUTER INTERACTION</span><i>✦</i>
-        <span>SPATIAL COMPUTING</span><i>✦</i>
-        <span>MIXED REALITY</span><i>✦</i>
-        <span>INTERACTION DESIGN</span><i>✦</i>
+    <section class="stats">
+      <div><strong>04</strong><span>co-located players</span></div>
+      <div><strong>MR</strong><span>Meta Quest 3</span></div>
+      <div><strong>01</strong><span>shared physical space</span></div>
+      <div><strong>YOU</strong><span>help evaluate the experience</span></div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">THE EXPERIENCE</p>
+        <h2>What will you do?</h2>
+        <p>You will join other participants in the same physical room and experience a multiplayer mixed reality prototype called <strong>De-buff Party</strong>.</p>
+      </div>
+
+      <div class="steps">
+        <article><span>01</span><h3>Wear a headset</h3><p>Use a Meta Quest 3 headset in a shared mixed reality environment.</p></article>
+        <article><span>02</span><h3>Play together</h3><p>Complete collaborative and social activities with other participants.</p></article>
+        <article><span>03</span><h3>Share feedback</h3><p>Complete the approved post-experience questionnaire and other study activities described in the Participant Information Sheet.</p></article>
       </div>
     </section>
 
-    <section id="about" class="section-shell content-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">01 / ABOUT</p>
-        <h2>I connect design research, emerging technology, and playful interaction.</h2>
+    <section class="gallery section">
+      <div class="section-heading">
+        <p class="eyebrow">PROTOTYPE</p>
+        <h2>Inside De-buff Party</h2>
+        <p>Replace the four placeholders below with approved screenshots from your prototype before recruitment begins.</p>
       </div>
-
-      <div class="about-grid">
-        <div class="about-copy reveal">
-          <p class="large-copy">
-            My work investigates how mixed reality can support social connection, identity
-            expression, collaboration, and meaningful participation in shared physical spaces.
-          </p>
-          <p>
-            I combine research-led design, prototyping, visual communication, and iterative user
-            evaluation. My current research focuses on an affordance-driven gamification framework
-            and its implementation in a co-located multi-user mixed reality prototype.
-          </p>
-          <p>
-            I am particularly interested in experiences where technology becomes less visible and
-            human behaviour, social interpretation, and shared activity become the centre of the design.
-          </p>
-        </div>
-
-        <div class="capability-panel reveal">
-          <div class="capability">
-            <span>01</span>
-            <div>
-              <h3>Research & Strategy</h3>
-              <p>Literature review, user research, experience framing, and design synthesis.</p>
-            </div>
-          </div>
-          <div class="capability">
-            <span>02</span>
-            <div>
-              <h3>Interaction Design</h3>
-              <p>Spatial interaction, gameful systems, prototyping, and experience flows.</p>
-            </div>
-          </div>
-          <div class="capability">
-            <span>03</span>
-            <div>
-              <h3>Visual Systems</h3>
-              <p>Interface direction, communication design, diagrams, and portfolio storytelling.</p>
-            </div>
-          </div>
-          <div class="capability">
-            <span>04</span>
-            <div>
-              <h3>Evaluation</h3>
-              <p>Formative studies, observation, questionnaires, system logs, and design validation.</p>
-            </div>
-          </div>
-        </div>
+      <div class="gallery-grid">
+        <figure><div class="placeholder">ADD IMAGE<br><small>Hat Selection</small></div><figcaption>Identity & behavioural cues</figcaption></figure>
+        <figure><div class="placeholder">ADD IMAGE<br><small>Emotion Bubble</small></div><figcaption>Low-pressure expression</figcaption></figure>
+        <figure><div class="placeholder">ADD IMAGE<br><small>Table Cube</small></div><figcaption>Shared spatial interaction</figcaption></figure>
+        <figure><div class="placeholder">ADD IMAGE<br><small>Chess Puzzle</small></div><figcaption>Collaborative problem-solving</figcaption></figure>
       </div>
     </section>
 
-    <section id="work" class="section-shell content-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">02 / SELECTED WORK</p>
-        <h2>Projects at the intersection of interaction, technology, and human behaviour.</h2>
+    <section id="details" class="section split">
+      <div class="section-heading">
+        <p class="eyebrow">STUDY DETAILS</p>
+        <h2>Before you participate</h2>
       </div>
-
-      <div class="project-grid">
-        <article class="project-card project-featured reveal">
-          <div class="project-visual visual-mr" aria-hidden="true">
-            <div class="spatial-board">
-              <span class="node node-1"></span>
-              <span class="node node-2"></span>
-              <span class="node node-3"></span>
-              <span class="node node-4"></span>
-              <div class="board-object"></div>
-            </div>
-            <p>CO-LOCATED MR / SHARED SPACE</p>
-          </div>
-          <div class="project-content">
-            <div class="project-number">01</div>
-            <p class="project-type">Mixed Reality · HCI · Prototype</p>
-            <h3>Co-located Social Mixed Reality Prototype</h3>
-            <p>
-              A four-player mixed reality system exploring identity, co-presence, shared spatial
-              interaction, behavioural constraints, collaborative puzzle-solving, and social interpretation.
-            </p>
-            <ul class="tag-list">
-              <li>Meta Quest 3</li>
-              <li>Unity</li>
-              <li>Shared Spatial Anchors</li>
-              <li>Netcode</li>
-            </ul>
-          </div>
-        </article>
-
-        <section class="prototype-gallery reveal" aria-labelledby="prototype-gallery-title">
-          <div class="gallery-heading">
-            <div>
-              <p class="project-type">Prototype Gallery</p>
-              <h3 id="prototype-gallery-title">Inside the co-located MR experience</h3>
-            </div>
-            <p>
-              Selected moments from the multi-user prototype demonstrate shared spatial interaction,
-              behavioural rules, embodied participation, and collaborative problem-solving in passthrough MR.
-            </p>
-          </div>
-
-          <div class="gallery-grid gallery-grid-four">
-            <figure class="gallery-item gallery-item-hero">
-              <img
-                src="assets/prototype-chess-puzzle.webp"
-                alt="Participant interacting with a shared mixed reality chess puzzle"
-                loading="lazy"
-              />
-              <figcaption>
-                <span>01</span>
-                <div>
-                  <strong>Shared Chess Puzzle</strong>
-                  <p>Co-located manipulation, distributed clues, and collaborative spatial deduction.</p>
-                </div>
-              </figcaption>
-            </figure>
-
-            <figure class="gallery-item">
-              <img
-                src="assets/prototype-hat-selection.webp"
-                alt="Mixed reality Hat Selection interface showing four behavioural hats"
-                loading="lazy"
-              />
-              <figcaption>
-                <span>02</span>
-                <div>
-                  <strong>Hat Selection</strong>
-                  <p>Visible identity cues assign voice- and distance-based behavioural conditions.</p>
-                </div>
-              </figcaption>
-            </figure>
-
-            <figure class="gallery-item">
-              <img
-                src="assets/prototype-emotion-bubble.webp"
-                alt="Mixed reality Emotion Bubble stage with floating expressive spheres"
-                loading="lazy"
-              />
-              <figcaption>
-                <span>03</span>
-                <div>
-                  <strong>Emotion Bubble</strong>
-                  <p>Participants express a mood while locating clues distributed through the shared space.</p>
-                </div>
-              </figcaption>
-            </figure>
-
-            <figure class="gallery-item">
-              <img
-                src="assets/prototype-table-cube.webp"
-                alt="Mixed reality Table Cube activity with coloured cubes on a shared table"
-                loading="lazy"
-              />
-              <figcaption>
-                <span>04</span>
-                <div>
-                  <strong>Table Cube</strong>
-                  <p>A synchronised colour-matching task explores procedural clarity and shared feedback.</p>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <article class="project-card framework-project reveal">
-          <div class="framework-visual" aria-hidden="true">
-            <div class="framework-orbit-system">
-              <div class="framework-ring ring-a"></div>
-              <div class="framework-ring ring-b"></div>
-              <div class="framework-ring ring-c"></div>
-              <div class="framework-label">ADGF</div>
-            </div>
-
-            <div class="framework-visual-meta">
-              <span>Framework / 2026</span>
-              <strong>Affordances → Mechanics → Experience</strong>
-            </div>
-
-            <div class="framework-data">
-              <div>
-                <strong>17</strong>
-                <span>studies synthesised</span>
-              </div>
-              <div>
-                <strong>05</strong>
-                <span>design-process steps</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="framework-content">
-            <div class="framework-topline">
-              <p class="project-type">Design Research · Published Framework</p>
-              <span class="publication-status">
-                <i aria-hidden="true"></i>
-                Published
-              </span>
-            </div>
-
-            <div class="project-number">02</div>
-
-            <h3>Affordance-Driven Gamification Framework</h3>
-
-            <p class="framework-summary">
-              A framework-oriented systematic literature review translating user needs,
-              contextual goals, technology affordances, interaction mechanics, and evaluative
-              criteria into a five-step process for designing socially immersive Metaverse experiences.
-            </p>
-
-            <div class="publication-panel">
-              <div class="publication-copy">
-                <p class="publication-kicker">Journal publication</p>
-                <h4>Designing Gamified Social Interaction for Gen Z in the Metaverse</h4>
-                <p>Journal of Metaverse · Review article · 2026</p>
-              </div>
-
-              <a
-                class="publication-link"
-                href="https://dergipark.org.tr/en/pub/jmv/article/1736387"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Read the ADGF publication in Journal of Metaverse"
-              >
-                <span>Read publication</span>
-                <strong aria-hidden="true">↗</strong>
-              </a>
-            </div>
-
-            <div class="framework-footer">
-              <ul class="tag-list">
-                <li>Affordance Theory</li>
-                <li>Gamification</li>
-                <li>Metaverse</li>
-                <li>Systematic Review</li>
-              </ul>
-
-              <span class="publication-doi">DOI · 10.57019/jmv.1736387</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-visual visual-brand" aria-hidden="true">
-            <div class="shrimp-mark">G.</div>
-            <div class="brand-lines"></div>
-          </div>
-          <div class="project-content">
-            <div class="project-number">03</div>
-            <p class="project-type">Visual Communication · Brand Design</p>
-            <h3>G.Shrimp</h3>
-            <p>
-              An award-recognised undergraduate graduation project combining visual identity,
-              communication design, and a cohesive brand experience.
-            </p>
-            <ul class="tag-list">
-              <li>Brand Identity</li>
-              <li>Visual Design</li>
-              <li>Art Direction</li>
-            </ul>
-          </div>
-        </article>
+      <div class="detail-grid">
+        <div><span>Location</span><strong>Murdoch University</strong></div>
+        <div><span>Session format</span><strong>4 participants</strong></div>
+        <div><span>Equipment</span><strong>Meta Quest 3</strong></div>
+        <div><span>Duration</span><strong>[INSERT APPROVED DURATION]</strong></div>
+        <div><span>Compensation</span><strong>[INSERT APPROVED INFORMATION]</strong></div>
+        <div><span>Study reference</span><strong>[INSERT ETHICS APPROVAL NUMBER]</strong></div>
       </div>
     </section>
 
-    <section id="research" class="section-shell content-section research-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">03 / PHD RESEARCH</p>
-        <h2>PhD research at Murdoch University</h2>
+    <section id="eligibility" class="section eligibility">
+      <div class="section-heading">
+        <p class="eyebrow">ELIGIBILITY</p>
+        <h2>Who can participate?</h2>
       </div>
-
-      <div class="research-grid">
-        <div class="research-statement reveal">
-          <p class="large-copy">
-            How can affordance-driven gamification support low-pressure, reciprocal, and socially
-            meaningful interaction in co-located mixed reality?
-          </p>
-          <p>
-            My PhD research at Murdoch University translates theoretical affordances into implemented MR mechanisms and
-            evaluates whether those mechanisms remain understandable, reliable, and socially useful
-            when multiple people interact in the same physical environment.
-          </p>
-        </div>
-
-        <div class="research-metrics reveal">
-          <div class="metric">
-            <strong>04</strong>
-            <span>co-located players</span>
-          </div>
-          <div class="metric">
-            <strong>08</strong>
-            <span>prototype stages</span>
-          </div>
-          <div class="metric">
-            <strong>01</strong>
-            <span>shared spatial system</span>
-          </div>
-          <div class="metric">
-            <strong>MR</strong>
-            <span>physical + virtual</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="research-flow reveal" aria-label="Research process">
-        <div>
-          <span>01</span>
-          <strong>User & Context Research</strong>
-        </div>
-        <i>→</i>
-        <div>
-          <span>02</span>
-          <strong>Affordance Mapping</strong>
-        </div>
-        <i>→</i>
-        <div>
-          <span>03</span>
-          <strong>MR Mechanism Design</strong>
-        </div>
-        <i>→</i>
-        <div>
-          <span>04</span>
-          <strong>Formative Evaluation</strong>
-        </div>
+      <div class="eligibility-box">
+        <p>Insert the inclusion and exclusion criteria exactly as approved in your ethics and recruitment materials.</p>
+        <ul>
+          <li>[APPROVED AGE RANGE]</li>
+          <li>[APPROVED ELIGIBILITY REQUIREMENT]</li>
+          <li>[APPROVED HEALTH / VR SAFETY REQUIREMENT, IF APPLICABLE]</li>
+          <li>[OTHER APPROVED CRITERIA]</li>
+        </ul>
       </div>
     </section>
 
-    <section id="background" class="section-shell content-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">04 / BACKGROUND</p>
-        <h2>Design foundation, research direction.</h2>
+    <section id="register" class="register section">
+      <div>
+        <p class="eyebrow">INTERESTED?</p>
+        <h2>Join the study.</h2>
+        <p>Read the study information and register your interest using the approved recruitment form.</p>
       </div>
-
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <div class="timeline-year">CURRENT</div>
-          <div>
-            <p class="timeline-label">Murdoch University · PhD Research</p>
-            <h3>Mixed Reality, Social Interaction & Gamification</h3>
-            <p>
-              Investigating shared spatial interaction, identity expression, co-presence, and
-              affordance implementation through a multi-user MR prototype.
-            </p>
-          </div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <div class="timeline-year">2022—2023</div>
-          <div>
-            <p class="timeline-label">University of New South Wales</p>
-            <h3>Master of Design — Interaction / UX</h3>
-            <p>
-              Postgraduate study focused on interaction design, user experience, design research,
-              systems thinking, and prototyping.
-            </p>
-          </div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <div class="timeline-year">2017—2021</div>
-          <div>
-            <p class="timeline-label">Hankou University</p>
-            <h3>BFA — Visual Communication Design</h3>
-            <p>
-              Graduated in the top three percent. Final project “G.Shrimp” received an Outstanding
-              Graduation Project award.
-            </p>
-          </div>
-        </article>
+      <div class="register-actions">
+        <a class="button primary large" id="registrationLink" href="REPLACE_WITH_APPROVED_FORM_URL" target="_blank" rel="noopener">Register your interest ↗</a>
+        <a class="text-link" href="REPLACE_WITH_PARTICIPANT_INFORMATION_SHEET_URL" target="_blank" rel="noopener">Read the Participant Information Sheet ↗</a>
       </div>
     </section>
 
-    <section id="contact" class="section-shell contact-section">
-      <div class="contact-card reveal">
-        <p class="eyebrow">05 / CONTACT</p>
-        <h2>Let’s create something between worlds.</h2>
-        <p>
-          For research collaboration, interaction design, portfolio enquiries, or mixed reality projects,
-          contact me by email.
-        </p>
-        <a class="contact-link" href="mailto:kris.xie@murdoch.edu.au">
-          kris.xie@murdoch.edu.au
-          <span aria-hidden="true">↗</span>
-        </a>
-
-        <div class="contact-meta">
-          <span>KRIS SHIEH / BAITONG XIE</span>
-          <span>INTERACTION DESIGNER & MR RESEARCHER</span>
-        </div>
+    <section class="qr-section section">
+      <div>
+        <p class="eyebrow">SHARE THIS STUDY</p>
+        <h2>Scan to visit this page</h2>
+        <p>This QR code points to <strong>https://krisshieh.com/participate/</strong>. It will work once this page has been uploaded to that address.</p>
       </div>
+      <img src="qr-participate.png" alt="QR code for the participant recruitment website" />
     </section>
   </main>
 
-  <footer class="site-footer section-shell">
-    <p>© <span id="year"></span> Kris Shieh. All rights reserved.</p>
-    <a href="#top">Back to top ↑</a>
+  <footer>
+    <div>
+      <strong>Kris Xie</strong>
+      <p>PhD Research · Murdoch University</p>
+      <a href="mailto:kris.xie@murdoch.edu.au">kris.xie@murdoch.edu.au</a>
+    </div>
+    <div class="footer-note">
+      <p>[INSERT SCHOOL / RESEARCH GROUP IF REQUIRED]</p>
+      <p>[INSERT SUPERVISOR INFORMATION IF REQUIRED]</p>
+      <p>This webpage must remain consistent with the study's approved ethics and recruitment materials.</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

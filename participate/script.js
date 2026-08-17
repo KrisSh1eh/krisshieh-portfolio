@@ -8,10 +8,3 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-const registration = document.getElementById('registrationLink');
-if (registration && registration.getAttribute('href').startsWith('REPLACE_')) {
-  registration.addEventListener('click', e => {
-    e.preventDefault();
-    alert('Replace this URL with your ethics-approved registration form before publishing.');
-  });
-}

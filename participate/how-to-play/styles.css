@@ -44,3 +44,223 @@ h1,h2,h3{font-family:"Space Grotesk",sans-serif} h1{font-size:clamp(76px,10vw,13
  .activity-grid figure.wide{grid-column:auto}.timeline article{min-height:170px}.quick-grid div{border-right:0!important;border-bottom:1px solid var(--line)!important}.quick-grid div:last-child{border-bottom:0!important}
  .notice{flex-direction:column;gap:6px}.final-cta{align-items:flex-start;flex-direction:column}.site-footer{flex-direction:column;align-items:flex-start;padding:38px 18px}
 }
+
+
+/* --- Role Cards + Icon System --- */
+.title-icon {
+  display:inline-grid;
+  place-items:center;
+  width:30px;
+  height:30px;
+  margin-right:10px;
+  border:1px solid rgba(201,255,70,.28);
+  border-radius:50%;
+  background:rgba(201,255,70,.07);
+  font-size:15px;
+  vertical-align:middle;
+}
+.icon-badge {
+  font-size:26px !important;
+  background:rgba(201,255,70,.06) !important;
+}
+.role-intro-strip {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--line);
+  margin-bottom:14px;
+}
+.role-intro-strip > div {
+  padding:20px;
+  border-right:1px solid var(--line);
+}
+.role-intro-strip > div:last-child { border-right:0; }
+.mini-icon {
+  display:grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  border:1px solid rgba(201,255,70,.34);
+  border-radius:50%;
+  background:var(--accent-soft);
+  margin-bottom:28px;
+  font-size:20px;
+}
+.role-intro-strip strong {
+  display:block;
+  font-family:"Space Grotesk",sans-serif;
+  font-size:17px;
+  margin-bottom:7px;
+}
+.role-intro-strip p {
+  margin:0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.55;
+}
+.role-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+}
+.role-card {
+  min-height:360px;
+  position:relative;
+  padding:28px;
+  border:1px solid var(--line);
+  background:var(--panel);
+  overflow:hidden;
+}
+.role-card::after {
+  content:"";
+  position:absolute;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  right:-65px;
+  top:-65px;
+  background:rgba(201,255,70,.045);
+  border:1px solid rgba(201,255,70,.13);
+}
+.role-card > span {
+  color:var(--accent);
+  font-size:9px;
+  letter-spacing:.12em;
+}
+.role-card h3 {
+  font-size:31px;
+  margin:18px 0 14px;
+}
+.role-card p {
+  color:var(--muted);
+  line-height:1.68;
+  font-size:14px;
+  max-width:460px;
+}
+.role-icon {
+  width:58px;
+  height:58px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(201,255,70,.38);
+  border-radius:16px;
+  background:rgba(201,255,70,.065);
+  font-size:27px;
+  margin-bottom:24px;
+}
+.role-tip {
+  position:absolute;
+  left:28px;
+  right:28px;
+  bottom:25px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.52;
+}
+.role-tip strong { color:var(--text); }
+.role-rule {
+  margin-top:14px;
+  padding:22px 24px;
+  display:grid;
+  grid-template-columns:54px 1fr;
+  gap:18px;
+  align-items:center;
+  border:1px solid rgba(201,255,70,.28);
+  background:var(--accent-soft);
+}
+.role-rule-icon {
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(201,255,70,.4);
+  border-radius:50%;
+  font-size:21px;
+}
+.role-rule strong {
+  font-family:"Space Grotesk",sans-serif;
+  font-size:16px;
+}
+.role-rule p {
+  margin:5px 0 0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.55;
+}
+.quick-icon {
+  display:inline-block;
+  margin-right:8px;
+  font-size:15px;
+}
+
+@media(max-width:900px){
+  .role-intro-strip{grid-template-columns:repeat(2,1fr)}
+  .role-intro-strip > div:nth-child(2){border-right:0}
+  .role-intro-strip > div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+}
+@media(max-width:640px){
+  .role-grid,.role-intro-strip{grid-template-columns:1fr}
+  .role-intro-strip > div{border-right:0;border-bottom:1px solid var(--line)}
+  .role-intro-strip > div:last-child{border-bottom:0}
+  .role-card{min-height:390px}
+}
+
+
+/* Brochure-aligned mechanics */
+.rule-callout,.role-objective{
+  margin:16px 0 !important;
+  padding:15px 16px;
+  border:1px solid rgba(201,255,70,.18);
+  background:rgba(201,255,70,.07);
+  color:var(--text) !important;
+  font-family:"Space Grotesk",sans-serif;
+  font-size:16px !important;
+  line-height:1.45 !important;
+}
+.brochure-grid .hat-card{min-height:350px}
+.brochure-role-grid .role-card{min-height:385px}
+.mechanic-banner{
+  margin-top:14px;padding:18px 22px;display:flex;gap:16px;align-items:center;
+  border:1px solid rgba(201,255,70,.28);background:rgba(201,255,70,.055)
+}
+.mechanic-banner.purple{border-color:rgba(190,140,255,.3);background:rgba(190,140,255,.055)}
+.banner-icon{font-size:25px}
+.mechanic-banner strong{font-family:"Space Grotesk";font-size:15px}
+.mechanic-banner p{margin:4px 0 0;color:var(--muted);font-size:12px}
+.constraint-banner{
+  margin-top:14px;padding:16px 20px;display:flex;gap:14px;align-items:center;
+  border:1px dashed var(--line2);background:var(--panel)
+}
+.constraint-banner>span{
+  width:28px;height:28px;display:grid;place-items:center;border:1px solid var(--line2);
+  border-radius:50%;font-weight:700
+}
+.constraint-banner p{margin:0;color:var(--muted);font-size:13px}
+.constraint-banner strong{color:var(--text)}
+.deduction-flow{
+  display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr auto 1fr;
+  gap:10px;align-items:stretch
+}
+.deduction-flow article{
+  min-height:230px;padding:20px;border:1px solid var(--line);background:var(--panel)
+}
+.deduction-flow article>span{color:var(--accent);font-size:10px}
+.deduction-flow h3{font-size:20px;margin:24px 0 8px}
+.deduction-flow p{color:var(--muted);font-size:12px;line-height:1.55}
+.flow-icon{
+  width:48px;height:48px;display:grid;place-items:center;margin-bottom:16px;
+  border:1px solid rgba(201,255,70,.3);border-radius:50%;font-size:22px;background:var(--accent-soft)
+}
+.flow-arrow{display:grid;place-items:center;color:var(--accent);font-size:22px}
+.takeaway-banner{
+  margin-top:18px;padding:20px 24px;display:flex;align-items:center;justify-content:center;
+  gap:18px;text-align:center;border:1px solid rgba(201,255,70,.25);background:var(--accent-soft)
+}
+.takeaway-banner span{font-size:28px;color:var(--accent)}
+.takeaway-banner p{margin:0;max-width:850px;line-height:1.6;font-size:14px}
+
+@media(max-width:1100px){
+ .deduction-flow{grid-template-columns:1fr}
+ .flow-arrow{transform:rotate(90deg);height:24px}
+}

@@ -264,3 +264,87 @@ h1,h2,h3{font-family:"Space Grotesk",sans-serif} h1{font-size:clamp(76px,10vw,13
  .deduction-flow{grid-template-columns:1fr}
  .flow-arrow{transform:rotate(90deg);height:24px}
 }
+
+
+/* --- Game Guide hero spatial visual --- */
+.hero-title-row{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 330px;
+  gap:56px;
+  align-items:center;
+  margin:22px 0 40px;
+}
+.hero-title-row h1{margin:0}
+.mr-visual{
+  position:relative;
+  width:310px;
+  aspect-ratio:1;
+  justify-self:end;
+  border:1px solid var(--line);
+  background:
+    linear-gradient(rgba(201,255,70,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(201,255,70,.035) 1px,transparent 1px),
+    radial-gradient(circle at center,rgba(201,255,70,.07),transparent 58%);
+  background-size:28px 28px,28px 28px,auto;
+  overflow:hidden;
+}
+.mr-visual:before,.mr-visual:after{
+  content:"";
+  position:absolute;
+  inset:18px;
+  border:1px solid rgba(201,255,70,.12);
+  pointer-events:none;
+}
+.mr-visual:after{
+  inset:50% auto auto 50%;
+  width:1px;height:100%;
+  transform:translate(-50%,-50%);
+  border:0;
+  background:rgba(201,255,70,.09);
+  box-shadow:-155px 0 rgba(201,255,70,.09),155px 0 rgba(201,255,70,.09);
+}
+.mr-core{
+  position:absolute;
+  left:50%;top:50%;
+  width:112px;height:112px;
+  transform:translate(-50%,-50%);
+  border:1px solid rgba(201,255,70,.68);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  background:rgba(10,12,11,.78);
+  box-shadow:0 0 0 12px rgba(201,255,70,.035),0 0 42px rgba(201,255,70,.08);
+}
+.mr-core span{font:700 30px/1 "Space Grotesk",sans-serif;color:var(--accent);letter-spacing:-.05em}
+.mr-core small{position:absolute;bottom:24px;font-size:7px;letter-spacing:.16em;color:var(--muted)}
+.mr-orbit{position:absolute;left:50%;top:50%;border:1px solid rgba(201,255,70,.22);border-radius:50%}
+.orbit-a{width:210px;height:210px;transform:translate(-50%,-50%) rotate(-12deg)}
+.orbit-b{width:264px;height:170px;transform:translate(-50%,-50%) rotate(32deg)}
+.mr-orbit i{position:absolute;width:7px;height:7px;border:1px solid var(--accent);background:#0a0c0b;border-radius:50%}
+.orbit-a i:nth-child(1){left:20px;top:55px}.orbit-a i:nth-child(2){right:10px;top:103px}.orbit-a i:nth-child(3){left:105px;bottom:-4px}
+.orbit-b i:nth-child(1){left:12px;top:72px}.orbit-b i:nth-child(2){right:18px;bottom:30px}
+.mr-node{
+  position:absolute;width:34px;height:34px;display:grid;place-items:center;
+  border:1px solid rgba(201,255,70,.55);border-radius:50%;
+  background:#111512;color:var(--accent);font:700 10px "Space Grotesk",sans-serif;
+}
+.node-a{left:24px;top:28px}.node-b{right:22px;top:40px}.node-c{left:38px;bottom:26px}.node-d{right:34px;bottom:30px}
+.mr-cube{position:absolute;width:28px;height:28px;border:1px solid rgba(201,255,70,.4);transform:rotate(45deg)}
+.cube-a{left:74px;top:132px}.cube-b{right:74px;bottom:128px}
+@media (prefers-reduced-motion:no-preference){
+  .orbit-a{animation:mrSpinA 18s linear infinite}
+  .orbit-b{animation:mrSpinB 24s linear infinite reverse}
+  .mr-core{animation:mrPulse 3.2s ease-in-out infinite}
+}
+@keyframes mrSpinA{from{transform:translate(-50%,-50%) rotate(-12deg)}to{transform:translate(-50%,-50%) rotate(348deg)}}
+@keyframes mrSpinB{from{transform:translate(-50%,-50%) rotate(32deg)}to{transform:translate(-50%,-50%) rotate(392deg)}}
+@keyframes mrPulse{0%,100%{box-shadow:0 0 0 12px rgba(201,255,70,.035),0 0 42px rgba(201,255,70,.08)}50%{box-shadow:0 0 0 17px rgba(201,255,70,.02),0 0 58px rgba(201,255,70,.14)}}
+@media(max-width:950px){
+  .hero-title-row{grid-template-columns:1fr 240px;gap:30px}
+  .mr-visual{width:230px}
+}
+@media(max-width:720px){
+  .hero-title-row{grid-template-columns:1fr;margin-bottom:36px}
+  .mr-visual{width:min(100%,310px);justify-self:start}
+}

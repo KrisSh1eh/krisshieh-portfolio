@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Optional participant guide for De-buff Party, a co-located mixed reality research experience." />
+  <meta name="description" content="A high-level public overview of De-buff Party, a four-player co-located mixed reality research experience." />
   <title>De-buff Party Game Guide | Kris Shieh</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -17,363 +17,87 @@
     </nav>
   </header>
 
-  <aside class="side-nav">
-    <div class="side-brand">
-      <span>DE-BUFF PARTY</span>
-      <strong>PLAYER GUIDE</strong>
-    </div>
-    <a href="#overview" class="active">00 / Overview</a>
-    <a href="#before-play">01 / Before Play</a>
-    <a href="#hats">02 / Hats</a>
-    <a href="#roles">03 / Role Cards</a>
-    <a href="#flow">04 / Game Flow</a>
-    <a href="#activities">05 / Activities</a>
-    <a href="#clues">06 / Clues</a>
-    <a href="#combined-effect">07 / Combined Effect</a>
-    <a href="#discussion">08 / Discuss & Vote</a>
-    <a href="#quick-reference">09 / Quick Reference</a>
-
-    <div class="side-qr">
-      <img src="qr-how-to-play.png" alt="QR code linking to this De-buff Party Game Guide" />
-      <p>Scan to open this guide on your phone.</p>
-    </div>
-  </aside>
-
-  <main class="content">
-    <section class="hero" id="overview">
-      <p class="kicker">NON-SPOILER PARTICIPANT GUIDE / SHARED ROOM</p>
-      <div class="hero-title-row">
+  <main>
+    <section class="hero page-shell" id="top">
+      <div class="hero-copy">
+        <p class="kicker">DE-BUFF PARTY / PUBLIC GAME OVERVIEW</p>
         <h1>GAME<br><span>GUIDE.</span></h1>
-        <div class="mr-visual" aria-hidden="true">
-          <div class="mr-orbit orbit-a"><i></i><i></i><i></i></div>
-          <div class="mr-orbit orbit-b"><i></i><i></i></div>
-          <div class="mr-core">
-            <span>MR</span>
-            <small>SHARED SPACE</small>
-          </div>
-          <div class="mr-cube cube-a"></div>
-          <div class="mr-cube cube-b"></div>
-          <div class="mr-node node-a">A</div>
-          <div class="mr-node node-b">B</div>
-          <div class="mr-node node-c">C</div>
-          <div class="mr-node node-d">D</div>
+        <p class="hero-lead">
+          De-buff Party is a four-player, co-located Mixed Reality experience built around shared activities,
+          communication, decision-making and collaboration in the same physical space.
+        </p>
+        <div class="notice">
+          <strong>No prior knowledge is required.</strong>
+          <p>This public guide provides only a high-level overview. All detailed gameplay instructions are given to every participant during the same standardised pre-experiment briefing.</p>
         </div>
       </div>
-      <p class="hero-lead">
-        De-buff Party is a co-located mixed reality social deduction and collaboration experience.
-        Select a visible Hat, receive a private Role Card, gather partial clues, solve shared MR
-        challenges, discuss suspicious behaviour, vote privately, and review the outcome.
-        This guide is optional and is intended to help potential participants understand the game before deciding whether to participate.
-      </p>
 
-      <div class="hero-rule-grid">
-        <div><span>PUBLIC</span><strong>Hats</strong><p>Visible behaviour rules.</p></div>
-        <div><span>PRIVATE</span><strong>Roles</strong><p>Your hidden social objective.</p></div>
-        <div><span>PARTIAL</span><strong>Clues</strong><p>Information to interpret and share.</p></div>
-      </div>
-
-      <div class="notice">
-        <strong>Optional game information.</strong>
-        <p>No prior knowledge of De-buff Party is required to participate. This page is provided for people who would like to understand the game in more detail before deciding whether to participate. All participants will receive the same standardised gameplay briefing before the MR session.</p>
+      <div class="spatial-visual" aria-label="Abstract visualisation of four players sharing one mixed reality space">
+        <div class="space-core"><span>SHARED</span><strong>MR SPACE</strong></div>
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="player p-a">A</div><div class="player p-b">B</div>
+        <div class="player p-c">C</div><div class="player p-d">D</div>
+        <div class="object o-1"></div><div class="object o-2"></div><div class="object o-3"></div>
       </div>
     </section>
 
-    <section class="section" id="before-play">
-      <div class="section-index">01 / BEFORE PLAY</div>
+    <section class="section page-shell">
+      <div class="section-index">01 / WHAT TO EXPECT</div>
       <div class="section-heading">
-        <h2>Your mission.</h2>
-        <p>Understand the public rules, keep private information private, and let the social deduction emerge through play.</p>
+        <h2>A shared social MR experience.</h2>
+        <p>You will take part with three other participants in the same room and move through a sequence of structured activities.</p>
       </div>
 
-      <div class="rule-cards">
-        <article>
-          <span class="num">01</span>
-          <h3>Follow your Hat</h3>
-          <p>Your Hat is visible to the group and gives you a temporary behaviour rule during gameplay.</p>
-        </article>
-        <article>
-          <span class="num">02</span>
-          <h3>Keep your Role private</h3>
-          <p>Read your Role Card silently. Do not show it or read the whole instruction aloud before the reveal.</p>
-        </article>
-        <article>
-          <span class="num">03</span>
-          <h3>Use clues as evidence</h3>
-          <p>Share, question, compare, or strategically withhold information. No single clue should be treated as the full answer.</p>
-        </article>
-        <article>
-          <span class="num">04</span>
-          <h3>Keep it low-pressure</h3>
-          <p>Suspicion and playful disagreement are part of the game. Personal attacks or embarrassment are not.</p>
-        </article>
+      <div class="expect-grid">
+        <article><span>01</span><div class="icon">◈</div><h3>Choose a visible game element</h3><p>You will begin by selecting a visible element that becomes part of the shared experience.</p></article>
+        <article><span>02</span><div class="icon">◇</div><h3>Receive private information</h3><p>Some information is provided individually during the session and is not visible to everyone.</p></article>
+        <article><span>03</span><div class="icon">⬡</div><h3>Take part in shared MR activities</h3><p>You will interact with virtual objects and complete several activities together in the same physical space.</p></article>
+        <article><span>04</span><div class="icon">◎</div><h3>Exchange information and collaborate</h3><p>You will communicate, make decisions and respond to other participants as the activities progress.</p></article>
+        <article><span>05</span><div class="icon">✦</div><h3>Discuss your experience afterwards</h3><p>After the MR session, you will take part in a guided focus group discussion about your experience.</p></article>
       </div>
     </section>
 
-    <section class="section" id="hats">
-      <div class="section-index">02 / VISIBLE HATS</div>
+    <section class="section page-shell" id="activities">
+      <div class="section-index">02 / ACTIVITIES</div>
       <div class="section-heading">
-        <h2>Public identity.<br>Behavioural rule.</h2>
-        <p>Your Hat is visible to everyone. It gives you a behavioural rule that other players can observe, interpret, and question during the session.</p>
-      </div>
-
-      <div class="hat-grid brochure-grid">
-        <article class="hat-card">
-          <div class="hat-symbol icon-badge" aria-hidden="true">🎩</div>
-          <span>VISIBLE HAT / VOICE</span>
-          <h3>Whisper</h3>
-          <p class="rule-callout">Speak softly and quietly.</p>
-          <p>Other players can see the Hat, but they do not know whether your behaviour is simply following the rule or is also connected to a hidden objective.</p>
-        </article>
-        <article class="hat-card">
-          <div class="hat-symbol icon-badge" aria-hidden="true">📣</div>
-          <span>VISIBLE HAT / VOICE</span>
-          <h3>Projection</h3>
-          <p class="rule-callout">Speak clearly and audibly.</p>
-          <p>Communicate in a clearly audible voice when speaking. Normal pauses are fine; the rule does not mean you must speak continuously.</p>
-        </article>
-        <article class="hat-card">
-          <div class="hat-symbol icon-badge" aria-hidden="true">🤝</div>
-          <span>VISIBLE HAT / DISTANCE</span>
-          <h3>Companion</h3>
-          <p class="rule-callout">Stay near the Whisper player.</p>
-          <p>Your positioning becomes visible social information. Other players may interpret whether your movement is intentional, accidental, or strategic.</p>
-        </article>
-        <article class="hat-card">
-          <div class="hat-symbol icon-badge" aria-hidden="true">↗</div>
-          <span>VISIBLE HAT / DISTANCE</span>
-          <h3>Lone Wolf</h3>
-          <p class="rule-callout">Maintain distance from others.</p>
-          <p>Keep independent spacing from the group while still participating in the shared activities and discussion.</p>
-        </article>
-      </div>
-
-      <div class="mechanic-banner">
-        <span class="banner-icon">👁️</span>
-        <div><strong>Visible behaviour → observed by others → social curiosity</strong>
-        <p>Is the behaviour intentional, accidental, or strategic?</p></div>
-      </div>
-    </section>
-
-    <section class="section" id="roles">
-      <div class="section-index">03 / HIDDEN ROLES</div>
-      <div class="section-heading">
-        <h2>Private identity.<br>Hidden objective.</h2>
-        <p>Each player secretly receives one Role Card with a unique objective. Keep your Role private while you play. Your Hat is visible; your Role is not.</p>
-      </div>
-
-      <div class="role-grid brochure-role-grid">
-        <article class="role-card spy">
-          <div class="role-icon" aria-hidden="true">🕵️‍♂️</div>
-          <span>HIDDEN ROLE</span>
-          <h3>Spy</h3>
-          <p class="role-objective">Violate your own Hat rule without being correctly identified.</p>
-          <div class="role-tip"><strong>Your challenge:</strong> create ambiguity without making your intention obvious.</div>
-        </article>
-
-        <article class="role-card chaos">
-          <div class="role-icon" aria-hidden="true">🃏</div>
-          <span>HIDDEN ROLE</span>
-          <h3>Chaos Agent</h3>
-          <p class="role-objective">Gain rewards by violating rules a limited number of times; lose the bonus if detected.</p>
-          <div class="role-tip"><strong>Your challenge:</strong> introduce controlled uncertainty while remaining part of the group.</div>
-        </article>
-
-        <article class="role-card detective">
-          <div class="role-icon" aria-hidden="true">🔎</div>
-          <span>HIDDEN ROLE</span>
-          <h3>Detective</h3>
-          <p class="role-objective">Observe others, support discussion, and identify the hidden roles accurately.</p>
-          <div class="role-tip"><strong>Your challenge:</strong> connect behaviour, clue claims, and group decisions into evidence.</div>
-        </article>
-
-        <article class="role-card devil">
-          <div class="role-icon" aria-hidden="true">😈</div>
-          <span>HIDDEN ROLE</span>
-          <h3>Saboteur</h3>
-          <p class="role-objective">Delay or mislead the group during the puzzle; hold privileged true clues selectively.</p>
-          <div class="role-tip"><strong>Your challenge:</strong> influence the group's reasoning without revealing your role too early.</div>
-        </article>
-      </div>
-
-      <div class="mechanic-banner purple">
-        <span class="banner-icon">🎭</span>
-        <div><strong>Hidden intention → strategic ambiguity → suspicion and negotiation</strong>
-        <p>What is the real reason behind this behaviour?</p></div>
-      </div>
-
-      <div class="constraint-banner">
-        <span>!</span>
-        <p><strong>Constraint:</strong> The Saboteur role cannot be assigned to a player with the Lone Wolf Hat.</p>
-      </div>
-
-      <div class="role-rule">
-        <div class="role-rule-icon" aria-hidden="true">🔐</div>
-        <div>
-          <strong>Keep your Role Card private</strong>
-          <p>You may discuss clues, reasoning, observations, and suspicions, but do not show your Role Card or read the full private instruction aloud before Role Reveal.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="flow">
-      <div class="section-index">04 / GAME FLOW</div>
-      <div class="section-heading">
-        <h2>Nine stages. One shared session.</h2>
-        <p>The experience moves from identity assignment to exploration, collaboration, social interpretation, private voting, and outcome feedback.</p>
-      </div>
-
-      <div class="timeline">
-        <article><span>01</span><h3><span class="title-icon" aria-hidden="true">🥽</span>Session Start</h3><p>Enter the shared MR room and follow the facilitator's setup and safety instructions.</p></article>
-        <article><span>02</span><h3><span class="title-icon" aria-hidden="true">🎩</span>Hat Selection</h3><p>Choose your hat and receive your rules.</p></article>
-        <article><span>03</span><h3><span class="title-icon" aria-hidden="true">🪪</span>Role Card</h3><p>Receive a hidden social objective. Read it privately.</p></article>
-        <article><span>04</span><h3><span class="title-icon" aria-hidden="true">🙂</span>Emotion Bubble</h3><p>Interact with bubbles and collect private partial clue information.</p></article>
-        <article><span>05</span><h3><span class="title-icon" aria-hidden="true">🧊</span>Table Cube</h3><p>Coordinate around a shared MR task while keeping your Hat rule in mind.</p></article>
-        <article><span>06</span><h3><span class="title-icon" aria-hidden="true">♟️</span>Chess Puzzle</h3><p>Combine partial clues, move pieces, test ideas, and negotiate a shared solution.</p></article>
-        <article><span>07</span><h3><span class="title-icon" aria-hidden="true">💬</span>Final Discussion</h3><p>Compare evidence, clue claims, observed behaviour, and suspicious decisions.</p></article>
-        <article><span>08</span><h3><span class="title-icon" aria-hidden="true">🗳️</span>Private Vote</h3><p>Vote privately based on your interpretation of the session.</p></article>
-        <article><span>09</span><h3><span class="title-icon" aria-hidden="true">✨</span>Reveal + Coins</h3><p>Roles become public and the system provides final outcome feedback.</p></article>
-      </div>
-    </section>
-
-    <section class="section" id="activities">
-      <div class="section-index">05 / ACTIVITIES</div>
-      <div class="section-heading">
-        <h2>How the activities work.</h2>
-        <p>The activities progressively move from individual exploration to shared manipulation and collaborative reasoning.</p>
+        <h2>Four activities in Mixed Reality.</h2>
+        <p>The images below show the broad sequence only. Detailed rules, private objectives and strategy are intentionally not shown here.</p>
       </div>
 
       <div class="activity-grid">
-        <figure>
-          <img src="activity-hat-selection.jpg" alt="Conceptual illustration of Hat Selection" />
-          <figcaption>
-            <span>ACTIVITY A</span>
-            <h3><span class="title-icon" aria-hidden="true">🎩</span>Hat Selection</h3>
-            <p>Choose your hat and receive your rules.</p>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="activity-emotion-bubble.jpg" alt="Conceptual illustration of Emotion Bubble" />
-          <figcaption>
-            <span>ACTIVITY B</span>
-            <h3><span class="title-icon" aria-hidden="true">🙂</span>Emotion Bubble</h3>
-            <p>Collect bubbles and receive secret clues.</p>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="activity-table-cube.jpg" alt="Conceptual illustration of Table Cube" />
-          <figcaption>
-            <span>ACTIVITY C</span>
-            <h3><span class="title-icon" aria-hidden="true">🧊</span>Table Cube</h3>
-            <p>Complete cube tasks with your De-buff.</p>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="activity-chess-puzzle.jpg" alt="Conceptual illustration of Chess Puzzle" />
-          <figcaption>
-            <span>ACTIVITY D</span>
-            <h3><span class="title-icon" aria-hidden="true">♟️</span>Chess Puzzle</h3>
-            <p>Cooperate or interfere to solve the puzzle.</p>
-          </figcaption>
-        </figure>
+        <figure><div class="image-wrap"><img src="activity-hat-selection.jpg" alt="Hat Selection activity" /><span>01</span></div><figcaption><h3>Hat Selection</h3><p>Choose a visible game element for the session.</p></figcaption></figure>
+        <figure><div class="image-wrap"><img src="activity-emotion-bubble.jpg" alt="Emotion Bubble activity" /><span>02</span></div><figcaption><h3>Emotion Bubble</h3><p>Interact with virtual objects and receive information during the activity.</p></figcaption></figure>
+        <figure><div class="image-wrap"><img src="activity-table-cube.jpg" alt="Table Cube activity" /><span>03</span></div><figcaption><h3>Table Cube</h3><p>Complete a shared cube-based activity with the group.</p></figcaption></figure>
+        <figure><div class="image-wrap"><img src="activity-chess-puzzle.jpg" alt="Chess Puzzle activity" /><span>04</span></div><figcaption><h3>Chess Puzzle</h3><p>Take part in a shared spatial puzzle activity.</p></figcaption></figure>
       </div>
     </section>
 
-    <section class="section split" id="clues">
+    <section class="section page-shell">
+      <div class="section-index">03 / SESSION FLOW</div>
+      <div class="flow-strip">
+        <div><span>01</span><strong>Briefing</strong><p>Receive the same gameplay instructions as the other participants.</p></div>
+        <div class="arrow">→</div>
+        <div><span>02</span><strong>Shared MR Session</strong><p>Complete the activities with three other participants.</p></div>
+        <div class="arrow">→</div>
+        <div><span>03</span><strong>Guided Focus Group</strong><p>Discuss your experience after the MR session.</p></div>
+      </div>
+    </section>
+
+    <section class="section page-shell final-cta">
       <div>
-        <div class="section-index">06 / CLUE CONDUCT</div>
-        <h2>Private first.<br>Share strategically.</h2>
+        <p class="kicker">INTERESTED IN PARTICIPATING?</p>
+        <h2>Read the full study information.</h2>
+        <p>The Participate page explains eligibility, duration, recording, participant appreciation and how to register your interest.</p>
       </div>
-      <div class="clue-panel">
-        <article><span>01</span><p>Most clue acquisition happens during <strong>Emotion Bubble</strong>.</p></article>
-        <article><span>02</span><p>Clues are partial. Do not assume your clue contains the whole solution.</p></article>
-        <article><span>03</span><p>Talk about what your clue <strong>means</strong> rather than showing another player your private UI.</p></article>
-        <article><span>04</span><p>Ask whether another clue supports or contradicts a proposed Chess move.</p></article>
-        <article><span>05</span><p>Use language such as <em>“My clue suggests…”</em> rather than immediately announcing a final square.</p></article>
-      </div>
-    </section>
-
-    <section class="section combined-effect" id="combined-effect">
-      <div class="section-index">07 / COMBINED EFFECT</div>
-      <div class="section-heading">
-        <h2>Social deduction +<br>collaborative negotiation.</h2>
-        <p>The game works because visible behavioural rules and hidden objectives overlap. What you see is not necessarily the full reason behind what another player is doing.</p>
-      </div>
-
-      <div class="deduction-flow">
-        <article><div class="flow-icon">🎩</div><span>01</span><h3>Act</h3><p>Follow your visible Hat while pursuing your hidden objective.</p></article>
-        <div class="flow-arrow">→</div>
-        <article><div class="flow-icon">👀</div><span>02</span><h3>Observe</h3><p>Interpret behaviour and form hypotheses about intention.</p></article>
-        <div class="flow-arrow">→</div>
-        <article><div class="flow-icon">💬</div><span>03</span><h3>Negotiate</h3><p>Discuss, exchange clues, question, defend, and challenge.</p></article>
-        <div class="flow-arrow">→</div>
-        <article><div class="flow-icon">🗳️</div><span>04</span><h3>Vote</h3><p>Make a private judgement about the hidden roles.</p></article>
-        <div class="flow-arrow">→</div>
-        <article><div class="flow-icon">✨</div><span>05</span><h3>Reveal</h3><p>Reveal roles, calculate rewards, and reflect on the experience.</p></article>
-      </div>
-
-      <div class="takeaway-banner">
-        <span>☆</span>
-        <p>The combination of visible rules and hidden objectives creates opportunities for self-monitoring, interpersonal interpretation, playful suspicion, and collective reflection.</p>
-      </div>
-    </section>
-
-    <section class="section" id="discussion">
-      <div class="section-index">08 / DISCUSS & VOTE</div>
-      <div class="section-heading">
-        <h2>Turn behaviour into evidence.</h2>
-        <p>The endgame is about interpretation rather than simply solving the physical puzzle.</p>
-      </div>
-
-      <div class="endgame-grid">
-        <article>
-          <span>FINAL DISCUSSION</span>
-          <h3>Explain what you noticed.</h3>
-          <p>Compare clue claims, object movement, voice/distance behaviour, unusual choices, and moments of possible rule-breaking.</p>
-          <div class="quote">“I noticed you moved away during the cube stage…”</div>
-        </article>
-        <article>
-          <span>PRIVATE VOTE</span>
-          <h3>Make your own judgement.</h3>
-          <p>Vote privately for the player who best matches the suspicious behaviour or hidden-role pattern you inferred.</p>
-        </article>
-        <article>
-          <span>REVEAL + COINS</span>
-          <h3>Reinterpret the session.</h3>
-          <p>Hidden roles become public. The outcome screen closes the session and lets the group see earlier actions in a new light.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section quick" id="quick-reference">
-      <div class="section-index">09 / QUICK REFERENCE</div>
-      <div class="section-heading">
-        <h2>Remember these six things.</h2>
-      </div>
-      <div class="quick-grid">
-        <div><strong><span class="quick-icon">🎩</span>HAT</strong><p>Visible identity + behaviour rule.</p></div>
-        <div><strong><span class="quick-icon">🪪</span>ROLE</strong><p>Private social objective.</p></div>
-        <div><strong><span class="quick-icon">🧩</span>CLUE</strong><p>Partial information. Share carefully.</p></div>
-        <div><strong><span class="quick-icon">🧊</span>CUBE</strong><p>Warm-up shared MR coordination.</p></div>
-        <div><strong><span class="quick-icon">♟️</span>CHESS</strong><p>Main group reasoning task. No answer spoilers.</p></div>
-        <div><strong><span class="quick-icon">🗳️</span>VOTE</strong><p>Private judgement after discussion.</p></div>
-      </div>
-
-      <div class="final-cta">
-        <div>
-          <p class="kicker">READY?</p>
-          <h2>Go back to the study page.</h2>
-        </div>
-        <a class="button" href="/participate/">Participant study page ↗</a>
-      </div>
+      <a class="button" href="/participate/">Participant study page ↗</a>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <strong>KRIS SHIEH / DE-BUFF PARTY</strong>
-    <p>Optional participant guide · Murdoch University research prototype</p>
-    <a href="/">krisshieh.com ↗</a>
+  <footer class="site-footer page-shell">
+    <div><strong>KRIS SHIEH / DE-BUFF PARTY</strong><span>PUBLIC GAME OVERVIEW</span></div>
+    <p>Murdoch University research prototype</p>
+    <a href="#top">Back to top ↑</a>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
